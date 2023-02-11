@@ -1,0 +1,15 @@
+array_width = 60
+attr_fn_like_width = 30
+break_closure_args = true
+chain_width = 60
+imports_granularity = "Crate"
+indent_style = "Block"
+merge_imports = true
+newline_style = "Unix"
+normalize_comments = true
+reorder_impl_items = true
+reorder_imports = true
+spaces_around_ranges = true
+struct_field_align_threshold = 20
+struct_lit_single_line = false
+wrap_comments = true
