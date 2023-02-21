@@ -9,7 +9,10 @@ async fn main() {
 
     let uri = std::env::var("MONGODB_URI").expect("Failed to connect to MongoDB!");
 
-    let client = Client::with_uri_str(uri).await.expect("Failed to connect");
+    let client = Client::with_uri_str(uri)
+        .await
+        .expect("Failed to connect to MongoDB!");
+    // .unwrap_or("http://localhost:27017".to_string())
 
     let app = routes::create_routes(client.clone()).await;
 
